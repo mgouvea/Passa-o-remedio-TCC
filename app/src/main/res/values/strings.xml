@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Passa o Remédio</string>
+    <string name="lgn_button">Entrar</string>
+    <string name="cadastro_button">Criar Cadastro</string>
+    <string name="tipo_entregador">Entregador</string>
+    <string name="tipo_cliente">Cliente</string>
+    <string name="tipo_farmacia">Farmácia</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="titulo_login">Acessando Conta</string>
+    <string name="tipo_cadastro">Escolhendo tipo de Cadastro</string>
+    <string name="cadastro_cliente">Cadastro de Cliente</string>
+    <string name="titulo_cadastro">Criando Cadastro</string>
+    <string name="acessar_senha">Senha</string>
+    <string name="acessar_email">Email</string>
+    <string name="title_activity_cliente_navigation_drawer">ClienteNavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Passa o Remédio</string>
+    <string name="nav_header_subtitle">passa.remedio@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_meus_produtos">MeusProdutosActivity</string>
+    <string name="acessar_cidade">Cidade</string>
+    <string name="acessar_CEP">CEP</string>
+    <string name="acessar_bairro">Bairro</string>
+    <string name="acessar_rua">Rua</string>
+    <string name="acessar_numero">Número</string>
+    <string name="acessar_confirmar_senha">Confirmar Senha</string>
+    <string name="data_nascimento">Data de Nascimento</string>
+    <string name="criar_cadastro">Criar Cadastro</string>
+    <string name="cadastro_entregador">Cadastro de Entregador</string>
+    <string name="cadastro_farmacia">Cadastro de Farmácia</string>
+    <string name="editar_cadastro">Editar Cadastro</string>
+    <string name="title_activity_corrida">CorridaActivity</string>
+
+
+    <string-array name="categorias">
+        <item>Categoria</item>
+        <item>Referência</item>
+        <item>Genérico</item>
+        <item>Similar</item>
+        <item>Fitoterápicos</item>
+        <item>Higiene Pessoal</item>
+        <item>Cosméticos</item>
+
+    </string-array>
+
+    <string-array name="regiao">
+        <item>Região</item>
+        <item>Plano Piloto</item>
+        <item>Asa Sul</item>
+        <item>Asa Norte</item>
+        <item>Sudoeste</item>
+        <item>Noroeste</item>
+        <item>Cruzeiro</item>
+        <item>Guará</item>
+        <item>Núcleo Bandeirante</item>
+        <item>Candangolândia</item>
+        <item>lago Sul</item>
+        <item>lago Norte</item>
+        <item>Sobradinho</item>
+        <item>Águas Claras</item>
+        <item>Jardim Botânico</item>
+
+    </string-array>
+
+    <string-array name="estados">
+        <item>UF</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MG</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="acessar_numero_endereco">Numero</string>
+    <string name="alterar_cadastro">Alterar Cadastro</string>
+
+</resources>

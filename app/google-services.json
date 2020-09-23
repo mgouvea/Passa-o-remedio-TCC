@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "74163763331",
+    "firebase_url": "https://projetotcc-fd657.firebaseio.com",
+    "project_id": "projetotcc-fd657",
+    "storage_bucket": "projetotcc-fd657.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74163763331:android:d3e59a09f6233f8d",
+        "android_client_info": {
+          "package_name": "app.calcounterapplication.com.tcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74163763331-dhbtpfhl3hled0085hn4b1l0uv3mer77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.calcounterapplication.com.tcc",
+            "certificate_hash": "e910d5029b4a20a9936e8a62910f4b0b48661071"
+          }
+        },
+        {
+          "client_id": "74163763331-8u6v1edgpr8e62mtu7v3c7fstnqq46mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFW2BXJRQzDfZf3DSac5xSknKPSjGs0B4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74163763331-8u6v1edgpr8e62mtu7v3c7fstnqq46mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

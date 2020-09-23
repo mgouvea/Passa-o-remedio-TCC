@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.calcounterapplication.com.tcc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- permissões galeria -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/titulo_login"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.TipoDeCadastroActivity"
+            android:label="@string/titulo_cadastro"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.cliente.CadastroClienteActivity"
+            android:label="@string/cadastro_cliente"
+            android:parentActivityName=".activity.TipoDeCadastroActivity" />
+        <activity
+            android:name=".activity.entregador.CadastroEntregadorActivity"
+            android:label="@string/cadastro_entregador"
+            android:parentActivityName=".activity.TipoDeCadastroActivity" />
+        <activity
+            android:name=".activity.farmacia.CadastroFarmaciaActivity"
+            android:label="@string/cadastro_farmacia"
+            android:parentActivityName=".activity.TipoDeCadastroActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".activity.cliente.MenuClienteActivity" />
+        <activity android:name=".activity.entregador.MenuEntregadorActivity" />
+        <activity
+            android:name=".activity.cliente.ClienteNavigationDrawer"
+            android:label="@string/title_activity_cliente_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name=".activity.farmacia.CadastroFarmaciaActivity" /> -->
+        <activity android:name=".activity.farmacia.MenuFarmaciaActivity" />
+        <activity
+            android:name=".activity.farmacia.CadastrarProdutosActivity"
+            android:label="Cadastrar Produtos"
+            android:parentActivityName=".activity.farmacia.MenuFarmaciaActivity" />
+        <activity
+            android:name=".activity.farmacia.MeusProdutosActivity"
+            android:label="@string/title_activity_meus_produtos"
+            android:parentActivityName=".activity.farmacia.MenuFarmaciaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.calcounterapplication.com.tcc.activity.farmacia.MenuFarmaciaActivity" />
+        </activity>
+        <activity
+            android:name=".activity.cliente.DetalheActivity"
+            android:label="DetalheProduto"
+            android:parentActivityName=".activity.cliente.ClienteNavigationDrawer" />
+        <activity android:name=".activity.cliente.PedidoDetalheActivity" />
+        <activity android:name=".activity.farmacia.FarmaciaProdutoActivity" />
+        <activity android:name=".activity.entregador.RequisicoesEntregadorAcitivity"
+            android:parentActivityName=".activity.entregador.MenuEntregadorActivity" />
+        <activity
+            android:name=".activity.CorridaActivity"
+            android:label="@string/title_activity_corrida"
+            android:parentActivityName=".activity.entregador.RequisicoesEntregadorAcitivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.calcounterapplication.com.tcc.activity.entregador.RequisicoesEntregadorAcitivity" />
+        </activity>
+        <activity android:name=".activity.farmacia.relatorioFarmacia"
+            android:parentActivityName=".activity.farmacia.MenuFarmaciaActivity" />
+    </application>
+
+</manifest>

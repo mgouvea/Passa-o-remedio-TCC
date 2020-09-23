@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:stretchColumns="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow>
+            <TextView
+                android:text="Informações pessoais:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="4dp"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editarClienteNome"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Nome" />
+
+            <EditText
+                android:id="@+id/editarClienteRG"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="RG" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editarClienteCPF"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="CPF" />
+
+
+            <TableLayout>
+                <TableRow>
+                    <EditText
+                        android:id="@+id/editarDataID"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <Button
+                        android:id="@+id/selecionarData"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/background_button"
+                        android:text="@string/data_nascimento"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <!--<EditText-->
+            <!--android:id="@+id/editClienteDataNascimento"-->
+            <!--android:layout_width="214dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:hint="@string/data_nascimento"-->
+            <!--android:inputType="date" />-->
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editarClienteEmail"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/acessar_email" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:padding="3dp"
+                android:text="Endereço:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editarClienteCidade"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/acessar_cidade" />
+
+            <EditText
+                android:id="@+id/editarClienteNumero"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/acessar_numero_endereco" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editarClienteRua"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/acessar_rua" />
+
+            <EditText
+                android:id="@+id/editarClienteUF"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="UF" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/editarClienteCEP"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/acessar_CEP" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:padding="3dp"
+                android:text="Senha:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editarClienteSenha"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:inputType="textPassword"
+                android:hint="@string/acessar_senha" />
+
+            <EditText
+                android:id="@+id/editarClienteConfirmarSenha"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:inputType="textPassword"
+                android:hint="@string/acessar_confirmar_senha" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <Button
+                android:id="@+id/alterarCadastroBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_button"
+                android:onClick="alterarCadastro"
+                android:text="@string/alterar_cadastro"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
+
+
